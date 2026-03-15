@@ -1,0 +1,42 @@
+fun main() {
+
+    var num1: Int = 0
+    var num2: Int = 0
+    var num3: Int = 0
+    var maior1: Int = 0
+    var maior2: Int = 0
+
+    print("Olá, digite um número: ")
+    num1 = readln().toInt()
+
+    print("Digite um outro número: ")
+    num2 = readln().toInt()
+
+    print("Digite um outro número: ")
+    num3 = readln().toInt()
+
+    // Achar o maior
+    if (num1 > num2 && num1 > num3) {
+        maior1 = num1
+    } else if (num2 > num1 && num2 > num3) {
+        maior1 = num2
+    } else {
+        maior1 = num3
+    }
+
+    // Achar o segundo maior (corrigido!)
+    if (maior1 == num1) {
+        // maior é num1 → segundo é o maior entre num2 e num3
+        maior2 = if (num2 > num3) num2 else num3
+    } 
+    else if (maior1 == num2) {
+        // maior é num2 → segundo é o maior entre num1 e num3
+        maior2 = if (num1 > num3) num1 else num3
+    } 
+    else {
+        // maior é num3 → segundo é maior entre num1 e num2
+        maior2 = if (num1 > num2) num1 else num2
+    }
+
+    println("A soma dos dois valores é: $maior2 + $maior1 = ${maior1 + maior2}")
+}
