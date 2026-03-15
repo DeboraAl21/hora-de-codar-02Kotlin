@@ -1,0 +1,16 @@
+fun main() {
+
+    //1.2. Faça um programa que leia um valor informado pelo usuário e diga se
+    // o valor informado é positivo, negativo ou zero.
+
+
+    println("Digite um numero")
+    val num1 = readln().toInt()
+
+
+   if (num1 >= 0){
+       println("O número: $num1 é positivo")
+   } else { println("O número: $num1 é negativo")
+
+   }
+}
