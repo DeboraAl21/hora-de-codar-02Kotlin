@@ -1,0 +1,83 @@
+fun main() {
+
+    var num1: Double
+    var num2: Double
+    var R: Double
+    var opcao: Int = 0
+
+    println(
+        "Calculadora\n" +
+                "Escolha uma Operação:\n" +
+                "1.) Adição\n" +
+                "2.) Subtração\n" +
+                "3.) Divisão\n" +
+                "4.) Multiplicação\n"
+    )
+
+    opcao = readln().toInt()
+
+    when (opcao) {
+
+        1 -> {
+            print("Digite um número: ")
+            num1 = readln().toDouble()
+
+            print("Digite outro número: ")
+            num2 = readln().toDouble()
+
+            if ((num1 >= 0 && num1 <= 4) && (num2 >= 0 && num2 <= 4)) {
+                R = num1 + num2
+                println("$num1 + $num2 = $R")
+            } else {
+                println("Número inválido")
+            }
+        }
+
+        2 -> {
+            print("Digite um número: ")
+            num1 = readln().toDouble()
+
+            print("Digite outro número: ")
+            num2 = readln().toDouble()
+
+            if ((num1 >= 0 && num1 <= 4) && (num2 >= 0 && num2 <= 4)) {
+                R = num1 - num2
+                println("$num1 - $num2 = $R")
+            } else {
+                println("Número inválido")
+            }
+        }
+
+        3 -> {
+            print("Digite um número: ")
+            num1 = readln().toDouble()
+
+            print("Digite outro número: ")
+            num2 = readln().toDouble()
+
+            if ((num1 >= 0 && num1 <= 4) && (num2 >= 0 && num2 <= 4)) {
+                R = num1 / num2
+                println("$num1 / $num2 = $R")
+            } else {
+                println("Número inválido")
+            }
+        }
+
+        4 -> {
+            print("Digite um número: ")
+            num1 = readln().toDouble()
+
+            print("Digite outro número: ")
+            num2 = readln().toDouble()
+
+            if ((num1 >= 0 && num1 <= 4) && (num2 >= 0 && num2 <= 4)) {
+                R = num1 * num2
+                println("$num1 * $num2 = $R")
+            } else {
+                println("Número inválido")
+            }
+        }
+
+        else -> println("Opção inválida!")
+    }
+}
