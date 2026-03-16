@@ -1,0 +1,35 @@
+fun main() {
+    //Faça um programa que leia 6 valores informados pelo usuário, calcule,
+    //exiba os números informados e escreva
+   // a média aritmética desses valores lidos.
+
+    var num1: Int = 0
+    var num2: Int = 0
+    var num3: Int = 0
+    var num4: Int = 0
+    var num5: Int = 0
+    var num6: Int = 0
+
+
+    print("Olá, digite um número: ")
+    num1 = readln().toInt()
+
+    print("Digite um outro número: ")
+    num2 = readln().toInt()
+
+    print("Digite um outro número: ")
+    num3 = readln().toInt()
+
+    print("Digite um outro número: ")
+    num4 = readln().toInt()
+
+    print("Digite um outro número: ")
+    num5 = readln().toInt()
+
+    print("Digite um outro número: ")
+    num6 = readln().toInt()
+
+
+
+    println("A média dos seis valores é: $num1 + $num2 + $num4 + $num5 + $num6 = ${(num1 + num2 + num4 + num5 + num6)/6}")
+}
