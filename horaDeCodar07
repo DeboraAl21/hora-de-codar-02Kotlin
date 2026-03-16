@@ -1,0 +1,40 @@
+fun main() {
+//7. Faça um programa que leia 6 números que o usuário vai informar. Todos os
+    // números lidos com valor inferior a 72
+    // devem ser somados. Escreva o valor final da soma efetuada e também todos
+    // valores que o usuário informou.
+
+    var num1: Int = 0
+    var num2: Int = 0
+    var num3: Int = 0
+    var num4: Int = 0
+    var num5: Int = 0
+    var num6: Int = 0
+
+
+
+    print("Olá, digite um número: ")
+    num1 = readln().toInt()
+
+    print("Digite um outro número: ")
+    num2 = readln().toInt()
+
+    print("Digite um outro número: ")
+    num3 = readln().toInt()
+
+    print("Digite um outro número: ")
+    num4 = readln().toInt()
+
+    print("Digite um outro número: ")
+    num5 = readln().toInt()
+
+    print("Digite um outro número: ")
+    num6 = readln().toInt()
+
+    // Achar o maior (comparando os 4 agora)
+    if (num1 <= 72 && num2 <= 72 && num3 <= 72 && num4 <= 72 && num5 <= 72 && num6 <= 72) {
+        println("A soma dos números infprmados é: $num1 + $num2 + $num3 + $num4 + $num5 + $num6 = ${num1 + num2 + num3 + num4 + num5 + num6}")
+    } else{ println("Número(s) informado(s) inválido(s), insira um número igual ou menor que 72! ")}
+
+
+}
