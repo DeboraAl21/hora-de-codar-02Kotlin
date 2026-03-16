@@ -1,0 +1,40 @@
+fun main() {
+ //10. Tendo como entrada a altura e o gênero designado ao nascer 
+    // (codificado da seguinte forma: 1: feminino - 2: masculino - ) 
+    // de uma pessoa, construa um programa que calcule e imprima seu peso ideal,
+    // utilizando as seguintes fórmulas.
+    
+    var genero: Int
+    var h: Double
+    var pesoIdeal: Double
+    val pF: Double = 62.1  // peso feminino
+    val pM: Double = 72.7  // peso masculino
+
+    println("Qual o seu gênero designado ao nascer?")
+    println("1) Feminino")
+    println("2) Masculino")
+    genero = readln().toInt()
+
+    when (genero) {
+
+        1 -> {
+            print("Digite a sua altura: ")
+            h = readln().toDouble()
+
+            pesoIdeal = (pF * h) - 44.7
+            println("O seu peso ideal é: $pesoIdeal")
+        }
+
+        2 -> {
+            print("Digite a sua altura: ")
+            h = readln().toDouble()
+
+            pesoIdeal = (pM * h) - 58
+            println("O seu peso ideal é: $pesoIdeal")
+        }
+
+        else -> {
+            println("Opção inválida!")
+        }
+    }
+}
